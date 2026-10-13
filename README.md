@@ -1,7 +1,7 @@
 # Diary App
 
-Nama: [Nama Mahasiswa]
-NIM: [NIM Mahasiswa]
+Nama: [Gieo sakti senja gumilang]
+NIM: [2430511003]
 
 ## Fitur yang selesai
 - Tampilan daftar buku harian dengan 5 entri.
