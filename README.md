@@ -4,12 +4,14 @@ Nama: [Gieo sakti senja gumilang]
 NIM: [2430511003]
 
 ## Fitur yang selesai
-- Tampilan daftar buku harian dengan 5 entri.
-- Header dengan avatar pengguna.
-- Kartu diary reusable menggunakan komponen `DiaryCard`.
-- Penggunaan `View`, `Text`, `Image`, `ScrollView`, `StyleSheet`, dan layout `Flexbox`.
-- Satu gambar mood menggunakan asset lokal di folder `assets/moods`.
-- Variasi border dan warna berdasarkan mood masing-masing kartu.
+Fitur & Poin Utama yang Diselesaikan
+
+- Design Tokens & StyleSheet Terpusat: Penggunaan token konsisten untuk warna (COLORS), jarak (SPACE), sudut lengkung (RADIUS), tipografi (TYPO), dan breakpoint - layar (BREAKPOINTS) di src/styles/tokens.js.
+- Reusable Component (DiaryCard): Kartu entri dinamis dengan interaksi sentuh (Pressable), efek ripple/opacity, dan label aksesibilitas (accessibilityLabel).
+- Responsive Layout (1 & 2 Kolom): Memanfaatkan hook useWindowDimensions() untuk mendeteksi lebar layar, secara otomatis beralih dari tampilan 1 kolom (ponsel) ke 2 kolom (tablet atau layar dengan width >= 600px).
+- Efficient List Rendering (FlatList): Menampilkan daftar entri secara efisien dengan penyesuaian jumlah kolom dan dukungan stable key re-rendering.
+- Interactive Detail Modal (DiaryDetailModal): Menampilkan rincian lengkap entri diary termasuk hero image proporsional (aspectRatio: 16/9) dan tombol tutup tanpa berpindah screen.
+- Aksesibilitas Dasar: Memastikan target sentuh yang layak, kontras teks yang konsisten, dan penggunaan SafeAreaView dari react-native-safe-area-context.
 
 ## Cara menjalankan
 1. Masuk ke folder proyek:
