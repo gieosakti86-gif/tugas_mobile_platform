@@ -3,12 +3,11 @@ import { Modal, View, Text, Image, StyleSheet, Pressable } from 'react-native';
 import { COLORS, SPACE, RADIUS, TYPO } from '../styles/tokens';
 export default function DiaryDetailModal({ visible, onClose, entry }) {
     if (!entry) return null;
-    const { title, date, body, heroUri } = entry;
+    const { title, date, body, moodImage } = entry;
     return (
-        <Modal visible={visible} animationType="slide">
+        <Modal visible={visible} animationType="slide" onRequestClose={onClose}>
             <View style={styles.container}>
-                <Image source={{ uri: heroUri || entry.moodUri }}
-                    style={styles.hero} />
+                <Image source={moodImage} style={styles.hero} />
                 <View style={styles.content}>
                     <Text style={styles.title}>{title}</Text>
                     <Text style={styles.date}>{date}</Text>
